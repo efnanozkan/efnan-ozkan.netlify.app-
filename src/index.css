@@ -1,13 +1,44 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=VT323&display=swap');
+
+.bg-primary {
+    background: #191825;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-secondary {
+    background: #272538;
 }
+
+.bg-accent {
+    background: #E384FF;
+}
+
+.text-accent {
+    color: #ebebe3;
+}
+
+.mobile-nav {
+    @apply block md:hidden fixed top-14 py-2 w-full h-max bg-primary duration-500;
+}
+nav li a {
+    @apply font-monospace text-white px-4 py-5 text-2xl;
+}
+
+p {
+    @apply font-sentences text-lg; 
+}
+
+nav li a:hover {
+    color: #7477FF;
+}
+h1 {
+    line-height: 1.5;
+    color: #191825;
+}
+
+
+
