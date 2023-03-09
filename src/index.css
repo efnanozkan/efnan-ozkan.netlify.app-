@@ -22,14 +22,14 @@
 }
 
 .mobile-nav {
-    @apply block md:hidden fixed top-14 py-2 w-full h-max bg-primary duration-500;
+    @apply block md:hidden bg-primary fixed top-14 py-2 w-full h-max duration-500;
 }
 nav li a {
     @apply font-monospace text-white px-4 py-5 text-2xl;
 }
 
 p {
-    @apply font-sentences text-lg; 
+    @apply font-sentences; 
 }
 
 nav li a:hover {
@@ -38,6 +38,7 @@ nav li a:hover {
 h1 {
     line-height: 1.5;
     color: #191825;
+    font-family: monospace;
 }
 
 

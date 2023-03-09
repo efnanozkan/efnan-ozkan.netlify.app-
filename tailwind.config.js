@@ -12,6 +12,8 @@ module.exports = {
     },
     backgroundImage: {
       'hero': "url('./assets/hero1.png')",
+      'stars': "url('./assets/stars.png')",
+      'ground': "url('./assets/ground.png')",
     },
     colors: {
       'hover-color': '#7477FF',
